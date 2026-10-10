@@ -8,6 +8,8 @@
 > host 负责按会话施加能力边界，client 负责在输入框那一行画出切换控件。
 
 ---
+<img width="1529" height="182" alt="screenshot-input-row" src="https://github.com/user-attachments/assets/412b1952-551a-4bf1-80ac-0b7cb85e9efc" />
+
 
 ## 三个模式
 

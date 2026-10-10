@@ -1,0 +1,56 @@
+{
+  "name": "dsh-webchat-mode",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness 插件：网页版式聊天模式 —— 能联网搜索、能读工作区文件、能记笔记，但改不了任何东西；输入框工具行内置 Chat / Web / Agent 三段切换控件。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "cordis-plugin",
+    "agent",
+    "webchat",
+    "read-only",
+    "tool-restriction"
+  ],
+  "license": "MIT",
+  "author": "TJ1024yjy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TJ1024yjy/dsh-webchat-mode.git"
+  },
+  "homepage": "https://github.com/TJ1024yjy/dsh-webchat-mode#readme",
+  "bugs": {
+    "url": "https://github.com/TJ1024yjy/dsh-webchat-mode/issues"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

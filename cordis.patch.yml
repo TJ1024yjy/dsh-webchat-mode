@@ -1,0 +1,5 @@
+# webchat-mode：网页版式聊天模式
+# host 半区负责按会话施加能力边界，client 半区在输入框工具行画出 Chat / Web / Agent 切换控件。
+- insert:
+    - id: webchat-mode
+      name: 'dsh-webchat-mode'
